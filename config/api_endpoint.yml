@@ -1,0 +1,27 @@
+market_expansion:
+  world_bank_gdp: "https://api.worldbank.org/v2/country/USA/indicator/NY.GDP.MKTP.CD?format=json"
+  world_bank_trade: "https://api.worldbank.org/v2/country/USA/indicator/NE.RSB.GNFS.ZS?format=json"
+  fred_consumer_spending: "https://api.stlouisfed.org/fred/series/observations?series_id=PCE&api_key={{FRED_API_KEY}}&file_type=json"
+  oecd_business_investment: "https://stats.oecd.org/SDMX-JSON/data/QNA/USA.B1_GE.TOT.A/all?json-lang=en"
+  imf_trade_volume: "https://www.imf.org/external/datamapper/api/WEO/NGDP_RPCH"
+
+inflation:
+  world_bank_cpi: "https://api.worldbank.org/v2/country/USA/indicator/FP.CPI.TOTL.ZG?format=json"
+  fred_cpi: "https://api.stlouisfed.org/fred/series/observations?series_id=CPIAUCSL&api_key={{FRED_API_KEY}}&file_type=json"
+  fred_ppi: "https://api.stlouisfed.org/fred/series/observations?series_id=PPIACO&api_key={{FRED_API_KEY}}&file_type=json"
+  bls_core_inflation: "https://api.bls.gov/publicAPI/v2/timeseries/data/CUUR0000SA0"
+  eurostat_hicp: "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/prc_hicp_midx?geo=EU27_2020"
+
+labor_costs:
+  bls_employment_cost: "https://api.bls.gov/publicAPI/v2/timeseries/data/CIU2010000000000I"
+  bls_hourly_earnings: "https://api.bls.gov/publicAPI/v2/timeseries/data/CES0500000008"
+  bls_unemployment: "https://api.bls.gov/publicAPI/v2/timeseries/data/LNS14000000"
+  oecd_wage_growth: "https://stats.oecd.org/SDMX-JSON/data/LFS_SEX_AGE_R/USA.MALE.TOTAL.EMP/annual?json-lang=en"
+  eurostat_labor_cost: "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/earn_lci_m?geo=EU27_2020"
+
+currency_risk:
+  imf_usd_exchange: "https://www.imf.org/external/datamapper/api/ER"
+  oecd_exchange_trends: "https://stats.oecd.org/SDMX-JSON/data/EXR/M.USA.USD/all?json-lang=en"
+  fred_dxy: "https://api.stlouisfed.org/fred/series/observations?series_id=DTWEXM&api_key={{FRED_API_KEY}}&file_type=json"
+  world_bank_exchange_rate: "https://api.worldbank.org/v2/country/USA/indicator/PA.NUS.FCRF?format=json"
+  eurostat_eur_to_usd: "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/exr_m?geo=EU27_2020"
